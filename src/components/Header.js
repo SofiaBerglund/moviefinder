@@ -1,9 +1,15 @@
 import React from "react";
+import styled from 'styled-components';
+
+const Title = styled.h2`
+    margin: 0;
+    color: lightblue;
+`
 
 const Header = props => {
   return (
     <header className="App-header">
-      <h2>{props.text}</h2>
+      <Title>{props.text}</Title>
     </header>
   );
 };
