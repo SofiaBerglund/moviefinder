@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Search = props => {
   const [searchValue, setSearchValue] = useState("");
@@ -24,7 +25,11 @@ const Search = props => {
         onChange={handleSearchInputChanges}
         type="text"
       />
-      <input onClick={callSearchFunction} type="submit" value="SEARCH" />
+      <Button
+        onClick={callSearchFunction}
+        type="submit"
+        text="SEARCH"
+      ></Button>
     </form>
   );
 };
