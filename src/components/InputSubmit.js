@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const typeButton = { primary: Boolean, type: String, text: String };
+const typeInput = { primary: Boolean, type: String, text: String };
 
-const Btn = styled("button", typeButton)`
+const InputSubmit = styled.input.attrs({ type: "submit" })`
   padding: 0.25em 1em;
   background-color: ${props => (props.primary ? "#fff" : "#0057aa")};
   color: ${props => (props.primary ? "#0057aa" : "#fff")};
@@ -13,8 +13,10 @@ const Btn = styled("button", typeButton)`
   cursor: pointer;
 `;
 
-const Button = props => {
-  return <Btn type={`${props.type}`} primary={props.primary}>{`${props.text}`}</Btn>;
+const Input = props => {
+  return (
+    <Btn type={`${props.type}`} primary={props.primary}>{`${props.text}`}</Btn>
+  );
 };
 
 export default Button;

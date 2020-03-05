@@ -20,16 +20,17 @@ const Search = props => {
 
   return (
     <form className="search">
-      <input
-        value={searchValue}
-        onChange={handleSearchInputChanges}
-        type="text"
-      />
-      <Button
-        onClick={callSearchFunction}
-        type="submit"
-        text="SEARCH"
-      ></Button>
+        <input
+          value={searchValue}
+          onChange={handleSearchInputChanges}
+          type="text"
+        />
+        <input
+          onClick={callSearchFunction}
+          value="SEARCH"
+          type="submit"
+          
+        ></input>
     </form>
   );
 };

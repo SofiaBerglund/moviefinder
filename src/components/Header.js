@@ -6,7 +6,7 @@ const Title = styled.h2`
 `;
 
 const HeaderWrapper = styled.header`
-  background-color: #282c34;
+  background-color: #70358b;
   height: 70px;
   display: flex;
   flex-direction: column;
